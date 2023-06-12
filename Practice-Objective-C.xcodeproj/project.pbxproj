@@ -28,6 +28,7 @@
 		C675C0922A3733E300D986A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C675C09C2A373B4400D986A4 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		C675C09D2A373BDD00D986A4 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		C675C09F2A37701000D986A4 /* Runable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				C675C0922A3733E300D986A4 /* main.m */,
 				C675C09C2A373B4400D986A4 /* Dog.h */,
 				C675C09D2A373BDD00D986A4 /* Dog.m */,
+				C675C09F2A37701000D986A4 /* Runable.h */,
 			);
 			path = "Practice-Objective-C";
 			sourceTree = "<group>";

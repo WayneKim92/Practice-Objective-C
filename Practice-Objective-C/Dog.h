@@ -6,8 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Runable.h"
 
-@interface Dog : NSObject
+@interface Dog : NSObject <Runable>
+@property NSString *name;
 @property int age;
+-(instancetype)initWithName:(NSString *)name;
 -(void)Show;
 @end
