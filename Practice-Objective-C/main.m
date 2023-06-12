@@ -6,11 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Dog.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Dog *nb=[[Dog alloc] init];
+        
+        [nb setAge:2];
+        NSLog(@"엔비의 나이는=%d",[nb getAge]);
+
+        [nb setAge:3];
+        NSLog(@"엔비의 나이는=%d",[nb getAge]);
     }
     return 0;
 }

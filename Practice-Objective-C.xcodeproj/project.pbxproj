@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C675C0932A3733E300D986A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C675C0922A3733E300D986A4 /* main.m */; };
+		C675C09E2A373BDD00D986A4 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = C675C09D2A373BDD00D986A4 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		C675C08F2A3733E300D986A4 /* Practice-Objective-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Practice-Objective-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C675C0922A3733E300D986A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C675C09C2A373B4400D986A4 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		C675C09D2A373BDD00D986A4 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				C675C0922A3733E300D986A4 /* main.m */,
+				C675C09C2A373B4400D986A4 /* Dog.h */,
+				C675C09D2A373BDD00D986A4 /* Dog.m */,
 			);
 			path = "Practice-Objective-C";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C675C09E2A373BDD00D986A4 /* Dog.m in Sources */,
 				C675C0932A3733E300D986A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
