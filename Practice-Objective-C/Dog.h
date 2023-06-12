@@ -12,6 +12,6 @@
     int age;
 }
 -(void)setAge:(int)a;
--(int)getAge;
+-(int)age;
 -(void)Show;
 @end

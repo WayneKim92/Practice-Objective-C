@@ -13,10 +13,12 @@ int main(int argc, const char * argv[]) {
         Dog *nb=[[Dog alloc] init];
         
         [nb setAge:2];
-        NSLog(@"엔비의 나이는=%d",[nb getAge]);
+        NSLog(@"엔비의 나이는=%d",[nb age]);
 
         [nb setAge:3];
-        NSLog(@"엔비의 나이는=%d",[nb getAge]);
+        NSLog(@"엔비의 나이는=%d",[nb age]);
+        
+        [nb Show];
     }
     return 0;
 }
