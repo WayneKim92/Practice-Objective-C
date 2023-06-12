@@ -15,8 +15,8 @@ int main(int argc, const char * argv[]) {
         [nb setAge:2];
         NSLog(@"엔비의 나이는=%d",[nb age]);
 
-        [nb setAge:3];
-        NSLog(@"엔비의 나이는=%d",[nb age]);
+        nb.age = 3;
+        NSLog(@"엔비의 나이는=%d",nb.age);
         
         [nb Show];
     }

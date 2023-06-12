@@ -8,10 +8,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Dog : NSObject
-{
-    int age;
-}
--(void)setAge:(int)a;
--(int)age;
+@property int age;
 -(void)Show;
 @end

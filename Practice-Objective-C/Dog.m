@@ -7,15 +7,8 @@
 
 #import "Dog.h"
 @implementation Dog
--(void)setAge:(int)a
-{
-    age=a;
-}
--(int)age{
-    return age;
-}
 -(void)Show
 {
-    NSLog(@"%d\n", age);
+    NSLog(@"%d\n", _age);
 }
 @end
