@@ -23,6 +23,20 @@ int main(int argc, const char * argv[]) {
         
         [nb walk];
         [db walk];
+        
+        // 요약하기
+        NSMutableArray *dogList = [NSMutableArray array];
+        [dogList addObject:nb];
+        [dogList addObject:db];
+        
+        NSLog(@"우리집 강아지는 %lu마리", [dogList count]);
+        
+        // 음... 맵 함수 없는 거니?
+        int totalAge = 0;
+        for(Dog *dog in dogList){
+            totalAge = totalAge + [dog age];
+        }
+        NSLog(@"우리집 강아지 평균 나이는 %f살", (float) totalAge / [dogList count]);
     }
     return 0;
 }
