@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAD7F30A6FF1993806FA1FC4 /* libPods-Practice-Objective-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAC1D9D4CF34C6BF9B67F48 /* libPods-Practice-Objective-C.a */; };
 		C675C0932A3733E300D986A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C675C0922A3733E300D986A4 /* main.m */; };
 		C675C09E2A373BDD00D986A4 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = C675C09D2A373BDD00D986A4 /* Dog.m */; };
 /* End PBXBuildFile section */
@@ -24,11 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D679C67F53357D00837E694 /* Pods-Practice-Objective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-Objective-C.release.xcconfig"; path = "Target Support Files/Pods-Practice-Objective-C/Pods-Practice-Objective-C.release.xcconfig"; sourceTree = "<group>"; };
+		6B25FED5E043390DEB1BBDF7 /* Pods-Practice-Objective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-Objective-C.debug.xcconfig"; path = "Target Support Files/Pods-Practice-Objective-C/Pods-Practice-Objective-C.debug.xcconfig"; sourceTree = "<group>"; };
 		C675C08F2A3733E300D986A4 /* Practice-Objective-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Practice-Objective-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C675C0922A3733E300D986A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C675C09C2A373B4400D986A4 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		C675C09D2A373BDD00D986A4 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		C675C09F2A37701000D986A4 /* Runable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runable.h; sourceTree = "<group>"; };
+		EFAC1D9D4CF34C6BF9B67F48 /* libPods-Practice-Objective-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Practice-Objective-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD7F30A6FF1993806FA1FC4 /* libPods-Practice-Objective-C.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C0790FAF2E8FA38CF675989 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B25FED5E043390DEB1BBDF7 /* Pods-Practice-Objective-C.debug.xcconfig */,
+				0D679C67F53357D00837E694 /* Pods-Practice-Objective-C.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5FC697F590B17D10C9B585E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC1D9D4CF34C6BF9B67F48 /* libPods-Practice-Objective-C.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C675C0862A3733E300D986A4 = {
 			isa = PBXGroup;
 			children = (
 				C675C0912A3733E300D986A4 /* Practice-Objective-C */,
 				C675C0902A3733E300D986A4 /* Products */,
+				5C0790FAF2E8FA38CF675989 /* Pods */,
+				C5FC697F590B17D10C9B585E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C675C0962A3733E300D986A4 /* Build configuration list for PBXNativeTarget "Practice-Objective-C" */;
 			buildPhases = (
+				A07C2F7C8AC23B3BB157CA40 /* [CP] Check Pods Manifest.lock */,
 				C675C08B2A3733E300D986A4 /* Sources */,
 				C675C08C2A3733E300D986A4 /* Frameworks */,
 				C675C08D2A3733E300D986A4 /* CopyFiles */,
@@ -120,6 +146,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A07C2F7C8AC23B3BB157CA40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Practice-Objective-C-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C675C08B2A3733E300D986A4 /* Sources */ = {
@@ -245,6 +296,7 @@
 		};
 		C675C0972A3733E300D986A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B25FED5E043390DEB1BBDF7 /* Pods-Practice-Objective-C.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UYTFWFXB99;
@@ -255,6 +307,7 @@
 		};
 		C675C0982A3733E300D986A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D679C67F53357D00837E694 /* Pods-Practice-Objective-C.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UYTFWFXB99;
