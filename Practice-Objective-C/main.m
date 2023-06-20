@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <ObjectiveSugar/ObjectiveSugar.h>
 #import "Dog.h"
+#import "Ch2.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -27,8 +28,9 @@ int main(int argc, const char * argv[]) {
         [dogList addObject:nb];
         [dogList addObject:db];
 
+        // 아래에 있는 문자열 처럼 %[데이터 형를 나타내는 문자]을 포함한 문자열을 "형식 문자열" 이라고 부른다.
         NSLog(@"우리집 강아지는 %lu마리", [dogList count]);
-
+        
         // 음... 맵 함수 없는 거니?
         int totalAge = 0;
         for(Dog *dog in dogList){
@@ -51,9 +53,18 @@ int main(int argc, const char * argv[]) {
             dog.age = dog.age + 1;
             return dog;
         }];
-        [dogList each:^(Dog *dog){
-            NSLog(@"%@의 나이는 %d", dog.name, dog.age);
+        [dogList eachWithIndex:^(Dog *dog, NSUInteger index){
+            if(index + 1 == dogList.count)
+            {
+                NSLog(@"%@의 나이는 %d\n", dog.name, dog.age);
+            } else
+            {
+                NSLog(@"%@의 나이는 %d", dog.name, dog.age);
+            }
         }];
+        
+        Ch2* ch2 = [[Ch2 alloc] init];
+        [ch2 display];
         
         // 자료형 정리
         NSLog(@"Objective-C 에서 @는 주로 NSString 객체를 의미한다.");
