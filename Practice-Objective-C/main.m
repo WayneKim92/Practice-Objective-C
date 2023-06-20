@@ -54,7 +54,9 @@ int main(int argc, const char * argv[]) {
         [dogList each:^(Dog *dog){
             NSLog(@"%@의 나이는 %d", dog.name, dog.age);
         }];
-
+        
+        // 자료형 정리
+        NSLog(@"Objective-C 에서 @는 주로 NSString 객체를 의미한다.");
     }
     return 0;
 }

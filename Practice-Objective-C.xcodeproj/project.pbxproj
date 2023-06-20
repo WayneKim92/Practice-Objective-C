@@ -53,7 +53,6 @@
 				6B25FED5E043390DEB1BBDF7 /* Pods-Practice-Objective-C.debug.xcconfig */,
 				0D679C67F53357D00837E694 /* Pods-Practice-Objective-C.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -298,8 +297,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B25FED5E043390DEB1BBDF7 /* Pods-Practice-Objective-C.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UYTFWFXB99;
+				DEVELOPMENT_TEAM = AZ9NKP8D9G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -309,8 +309,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D679C67F53357D00837E694 /* Pods-Practice-Objective-C.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UYTFWFXB99;
+				DEVELOPMENT_TEAM = AZ9NKP8D9G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
