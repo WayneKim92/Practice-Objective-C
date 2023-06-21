@@ -9,6 +9,7 @@
 #import <ObjectiveSugar/ObjectiveSugar.h>
 #import "Dog.h"
 #import "Ch2.h"
+#import "Ch3.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -68,6 +69,13 @@ int main(int argc, const char * argv[]) {
         
         // 자료형 정리
         NSLog(@"Objective-C 에서 @는 주로 NSString 객체를 의미한다.");
+        
+        // Ch3
+        Fraction *fraction = [Fraction new]; // alloc과 init을 한번에 하기
+        [fraction setNumerator: 1];
+        [fraction setDenominator: 3];
+        [fraction print];
+        NSLog(@"%i/%i", [fraction numerator], [fraction denominator]);
     }
     return 0;
 }
