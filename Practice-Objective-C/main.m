@@ -111,6 +111,16 @@ int main(int argc, const char * argv[]) {
         [calculator divide:2];
         [calculator multiply:0];
         NSLog(@"결과값 = %f", [calculator accumulator]);
+        
+        // 불리언 표기법이 좀 그렇다. 값으로 YES 또는 NO를 가질 수 있다.
+        BOOL isTrue = YES;
+        
+        int concentration = 10;
+        BOOL isBorring = concentration < 20 ? YES : NO;
+        if(isBorring)
+        {
+            NSLog(@"지루함");
+        }
     }
     return 0;
 }
