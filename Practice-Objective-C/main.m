@@ -10,6 +10,7 @@
 #import "Dog.h"
 #import "Ch2.h"
 #import "Ch3.h"
+#import "Ch4.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -76,6 +77,40 @@ int main(int argc, const char * argv[]) {
         [fraction setDenominator: 3];
         [fraction print];
         NSLog(@"%i/%i", [fraction numerator], [fraction denominator]);
+        
+        // Ch4
+        // 기본 자료형
+        int number = 100;
+        float floatingNumber = 1.01;
+        double doubleNumber = 1.00e+11;
+        char charactor = 'W';
+        char specialCharactor = '\n';
+        NSLog(@"%i %f %e %c %c", number, floatingNumber, doubleNumber, charactor, specialCharactor); // Objective-C에서 특수문자(\n)는 char 타입으로 컴파일러가 처리해준다. 아스키코드라서 그런 듯
+        
+        // 자료형의 수식어
+        long int bigNumber;
+        short int smallNumber;
+        long double bigDoubleNumber;
+        // short double / double 앞에는 short 수식어 붙일 수 없다.
+        unsigned int positiveNumber;
+        
+        // id 자료형 / 다형성, 동적 타이핑, 동적 바인딩을 다룰 때 꼭 필요한 자료형이다.
+        // 뒤에서 다룬다.
+        
+        // 형변환
+        int n1 = 10;
+        float f1 = n1 / 3;          // 3.0000
+        float f2 = (float)n1 / 3;   // 3.3333
+        NSLog(@"%f", f1);
+        NSLog(@"%f", f2);
+        
+        // 사용해보자
+        Calculator *calculator = [Calculator new];
+        [calculator add:10];
+        [calculator subtract:2];
+        [calculator divide:2];
+        [calculator multiply:0];
+        NSLog(@"결과값 = %f", [calculator accumulator]);
     }
     return 0;
 }

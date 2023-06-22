@@ -10,6 +10,7 @@
 		AAD7F30A6FF1993806FA1FC4 /* libPods-Practice-Objective-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAC1D9D4CF34C6BF9B67F48 /* libPods-Practice-Objective-C.a */; };
 		C675C0932A3733E300D986A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C675C0922A3733E300D986A4 /* main.m */; };
 		C675C09E2A373BDD00D986A4 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = C675C09D2A373BDD00D986A4 /* Dog.m */; };
+		C67FD0D52A44920B00453F5C /* Ch4.m in Sources */ = {isa = PBXBuildFile; fileRef = C67FD0D42A44920B00453F5C /* Ch4.m */; };
 		C6A9C33F2A4207E100C7F044 /* Ch2.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A9C33E2A4207E100C7F044 /* Ch2.m */; };
 		C6CFA71C2A433F8E001EE4B0 /* Ch3.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CFA71B2A433F8E001EE4B0 /* Ch3.m */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,8 @@
 		C675C09C2A373B4400D986A4 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		C675C09D2A373BDD00D986A4 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		C675C09F2A37701000D986A4 /* Runable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runable.h; sourceTree = "<group>"; };
+		C67FD0D42A44920B00453F5C /* Ch4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ch4.m; sourceTree = "<group>"; };
+		C67FD0D62A44939600453F5C /* Ch4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ch4.h; sourceTree = "<group>"; };
 		C6A9C33E2A4207E100C7F044 /* Ch2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ch2.m; sourceTree = "<group>"; };
 		C6A9C3412A420D9F00C7F044 /* Ch2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ch2.h; sourceTree = "<group>"; };
 		C6CFA71A2A433F81001EE4B0 /* Ch3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ch3.h; sourceTree = "<group>"; };
@@ -95,10 +98,12 @@
 				C675C09C2A373B4400D986A4 /* Dog.h */,
 				C675C09D2A373BDD00D986A4 /* Dog.m */,
 				C675C09F2A37701000D986A4 /* Runable.h */,
-				C6A9C33E2A4207E100C7F044 /* Ch2.m */,
 				C6A9C3412A420D9F00C7F044 /* Ch2.h */,
+				C6A9C33E2A4207E100C7F044 /* Ch2.m */,
 				C6CFA71A2A433F81001EE4B0 /* Ch3.h */,
 				C6CFA71B2A433F8E001EE4B0 /* Ch3.m */,
+				C67FD0D62A44939600453F5C /* Ch4.h */,
+				C67FD0D42A44920B00453F5C /* Ch4.m */,
 			);
 			path = "Practice-Objective-C";
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				C675C09E2A373BDD00D986A4 /* Dog.m in Sources */,
 				C6CFA71C2A433F8E001EE4B0 /* Ch3.m in Sources */,
 				C675C0932A3733E300D986A4 /* main.m in Sources */,
+				C67FD0D52A44920B00453F5C /* Ch4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
