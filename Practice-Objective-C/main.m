@@ -11,6 +11,7 @@
 #import "Ch2.h"
 #import "Ch3.h"
 #import "Ch4.h"
+#import "Ch7.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -121,6 +122,23 @@ int main(int argc, const char * argv[]) {
         {
             NSLog(@"지루함");
         }
+        
+        NSLog(@"========================");
+        
+        Printer *printer = [Printer new];
+        Printer *printer2 = [Printer new];
+        
+        for(int i = 0; i < 5; i++){
+            [printer print];
+            [printer2 print];
+        }
+        [printer showPrintCount];  // showPrintCount == 1
+        [printer2 showPrintCount]; // showPrintCount == 2
+        [printer showPrintCount];  // showPrintCount == 3
+        
+        printer.pageCount;
+        NSLog(@"========================");
+        
     }
     return 0;
 }
