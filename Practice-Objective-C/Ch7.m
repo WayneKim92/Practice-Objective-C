@@ -10,7 +10,9 @@
 @implementation Printer
 - (void)print {
     NSLog(@"페이지 인쇄");
-    _pageCount = _pageCount + 1;
+//    다양한 형태로 써보자.
+//    _pageCount = _pageCount + 1;
+    self.pageCount = self.pageCount + 1;
 }
 
 - (void)showPrintCount {
